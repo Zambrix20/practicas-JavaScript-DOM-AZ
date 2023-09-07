@@ -66,7 +66,7 @@ let songsData = [
 const mostrarCanciones = (listaCanciones) => {
     // Aqui nos traemos el div con el id para usarlo
     const containerList = document.querySelector('#lista-canciones')
-    console.log(containerList);
+    //console.log(containerList);
 
     listaCanciones.forEach((item) => {
         // Imagen de la cancion
@@ -93,15 +93,21 @@ const mostrarCanciones = (listaCanciones) => {
         const likes = document.createElement('p')
         likes.textContent = 'Numero de likes: ' + item.statistics.likes
 
+        // Numero de reproducciones
+        const reproducciones = document.createElement('p')
+        reproducciones.textContent = 'Numero de reproducciones: ' + item.statistics.reproductions
+
         // Agregar a la tarjeta
         tarjeta.appendChild(img)
         tarjeta.appendChild(titulo)
         tarjeta.appendChild(banda)
         tarjeta.appendChild(lanzamiento)
         tarjeta.appendChild(likes)
+        tarjeta.appendChild(reproducciones)
 
-        // Agregar al DOM
+        // Agregar al DOM - va creando una tarjeta por cancion
         containerList.appendChild(tarjeta)
+        //console.log(containerList);
     });
 
 
