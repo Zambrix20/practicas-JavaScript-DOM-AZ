@@ -2,7 +2,8 @@ const button = document.querySelector('#enviarButton');
 const mainContainer = document.querySelector('#mainContainer')
 const avatares = []
 
-// Renderizar una card del usuario
+// Renderizar una card del usuario, 
+// con su indice de la tarjeta para despues eliminarlo
 const renderPersona = (infoPersona, index) => {
 
     const card = document.createElement('div')
@@ -89,8 +90,11 @@ const renderPersona = (infoPersona, index) => {
     // Listener para el boton eliminar
     buttonDelete.addEventListener('click', (event) => {
         // Accedemos al indice del elemento que le hacemos click
+        console.log(event);
+        console.log(event.target.dataset.person);
         const elementToRemove = Number(event.target.dataset.person)
 
+        // Aqui lo eliminamos
         avatares.splice(elementToRemove, 1)
         console.log(avatares);
 
@@ -183,7 +187,8 @@ button.addEventListener('click', (event) => {
 
     avatares.push(result)
 
-    // Primero, limpiamos la lista antes que se renderice, visto desde el DOM
+    // Primero, limpiamos la lista antes que se renderice, 
+    // visto desde el DOM
     cleanList()
 
     // Luego, se van contruyendo las tarjetas a mostrar
