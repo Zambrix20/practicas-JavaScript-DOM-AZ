@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row align-items-start">
+        <!-- Formulario -->
+        <div class="col">
+          <div class="container">
+            <form>
+              <div class="mb-3">
+                <label for="basic-url" class="form-label fw-semibold"
+                  >Avatar</label
+                >
+                <input type="text" class="form-control" id="basic-url" />
+              </div>
+              <div class="mb-3">
+                <label for="username" class="form-label fw-semibold"
+                  >Nombre</label
+                >
+                <input type="text" class="form-control" id="userNameText" />
+              </div>
+              <div class="mb-3">
+                <label for="userLastName" class="form-label fw-semibold"
+                  >Apellido</label
+                >
+                <input type="text" class="form-control" id="userLastName" />
+              </div>
+              <div class="mb-3">
+                <label for="birtDate" class="form-label fw-semibold"
+                  >Fecha De Nacimiento</label
+                >
+                <input type="date" class="form-control" id="birthDate" />
+              </div>
+              <!--Radios-->
+              <div class="">
+                <label for="birtDate" class="form-label fw-semibold"
+                  >Genero</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  value="Femenino"
+                />
+
+                <label class="form-check-label" for="inlineRadio1"
+                  >Femenino</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  value="Masculino"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Masculino</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  value="Otro"
+                />
+                <label class="form-check-label" for="inlineRadio3">Otro </label>
+              </div>
+              <div class="mb-3">
+                <label for="birtDate" class="form-label fw-semibold"
+                  >Pais</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="select"
+                >
+                  <option selected>Open this select menu</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Estados Unidos">Estados Unidos</option>
+                  <option value="Canada">Canada</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label fw-semibold"
+                  >Descripcion</label
+                >
+                <input type="text" class="form-control" id="description" />
+              </div>
+
+              <button type="submit" id="enviarButton" class="btn btn-primary">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Tarjetas -->
+        <div class="col">
+          <div class="container" id="mainContainer">
+            <!-- Aqui empieza la carta -->
+            <!-- <div class="card mb-3" style="max-width: 540px" > -->
+            <!-- <div class="row g-0" > -->
+            <!-- <div class="col-sm-4 d-flex align-items-center" > -->
+            <!-- <img
+                    src="https://picsum.photos/200"
+                    class="img-fluid rounded-start card-img h-100"
+                    alt="..."
+                  /> -->
+            <!-- </div> -->
+            <!-- <div class="col-sm-8 d-flex align-items-center"> -->
+            <!-- <div class="card-body"> -->
+            <!-- <div class="row align-items-start"> -->
+            <!-- <div class="col"> -->
+            <!-- <h6 class="card-title">Nombre</h6>
+                        <p class="card-text">Arthur</p> -->
+            <!-- <h6 class="card-title">Fecha</h6>
+                        <p class="card-text">2023-09-12</p> -->
+            <!-- <h6 class="card-title">Pais</h6>
+                        <p class="card-text">Mexico</p> -->
+            <!-- </div> -->
+            <!-- <div class="col"> -->
+            <!-- <h6 class="card-title">Apellido</h6>
+                        <p class="card-text">Zambryx</p> -->
+            <!-- <h6 class="card-title">Genero</h6>
+                        <p class="card-text">Masculino</p> -->
+            <!-- </div> -->
+            <!-- <div class="container d-flex justify-content-end"> -->
+            <!-- <button
+                          type="button"
+                          class="btn btn-outline-primary me-3 text-black"
+                        >
+                          Editar
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-danger text-black"
+                        >
+                          Eliminar
+                        </button> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
